@@ -1,50 +1,46 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Localis
 
-Currently, two official plugins are available:
+Localis is a powerful tool designed to simplify the process of translating English JSON files and documents into any desired language. By utilizing Google Translator API, Localis makes it easy for companies to implement website localization, helping users seamlessly translate entire websites into their preferred languages.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Problem
 
-## Expanding the ESLint configuration
+One of the most common challenges faced by companies is the tedious and time-consuming task of manually translating large JSON files for website localization. This process often involves translating strings in JSON files and ensuring they are compatible with the target language, which can be overwhelming when dealing with large websites or multiple languages.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Localis addresses this issue by automating the translation of JSON files and documents, allowing for a smoother, faster localization process.
 
-- Configure the top-level `parserOptions` property like this:
+# Features
+- Automatic Translation: Translates English JSON and document files into any language using the Google Translator API.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- Easy Integration: Seamlessly integrates with your website's localization system, making it easy to localize content across multiple languages.
+
+- Supports Multiple Languages: You can translate content into multiple languages as needed, ensuring your website reaches a global audience.
+
+- Efficient Workflow: Reduces the time and effort spent on translating large JSON files, helping you to focus on improving user experience.
+
+- Customizable: Supports different JSON structures and can be easily adjusted to fit your project's needs.
+
+# Instalation
+
+- Clone the Repository
+
+```bash
+https://github.com/Abhinav0915/LocalisFE
+
+```
+- Install the packages
+
+```bash
+npm install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- Run the project
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm run dev
 ```
+# Contributing
+
+Contributions are welcome! If you would like to contribute to Localis, please fork the repository and submit a pull request. You can also report any issues or request features via GitHub issues.
+
+
